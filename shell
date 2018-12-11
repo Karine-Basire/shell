@@ -1,0 +1,51 @@
+kin@karine:~$ pwd
+/home/kin
+kin@karine:~$ mkdir jaime_le_shell
+mkdir: impossible de créer le répertoire «jaime_le_shell»: Le fichier existe
+kin@karine:~$ mkdir jaime_le_shell
+kin@karine:~$ cd jaime_le_shell
+kin@karine:~/jaime_le_shell$ touch test1
+kin@karine:~/jaime_le_shell$ touch test2
+kin@karine:~/jaime_le_shell$ touch test3
+kin@karine:~/jaime_le_shell$ touch test4
+kin@karine:~/jaime_le_shell$ touch test5
+kin@karine:~/jaime_le_shell$ touch test6
+kin@karine:~/jaime_le_shell$ LS -L
+
+La commande « LS » n'a pas été trouvée, mais peut être installée avec :
+
+sudo apt install sl
+
+kin@karine:~/jaime_le_shell$ ls -l
+total 0
+-rw-r--r-- 1 kin kin 0 déc.  11 17:04 test1
+-rw-r--r-- 1 kin kin 0 déc.  11 17:04 test2
+-rw-r--r-- 1 kin kin 0 déc.  11 17:04 test3
+-rw-r--r-- 1 kin kin 0 déc.  11 17:04 test4
+-rw-r--r-- 1 kin kin 0 déc.  11 17:05 test5
+-rw-r--r-- 1 kin kin 0 déc.  11 17:05 test6
+kin@karine:~/jaime_le_shell$ mkdir le_shell_cest_trop_coolls
+kin@karine:~/jaime_le_shell$ mv test1 le_shell_cest_trop_coolls
+kin@karine:~/jaime_le_shell$ mv test5 le_shell_cest_trop_coolls
+kin@karine:~/jaime_le_shell$ cp test2 le_shell_cest_trop_coolls
+kin@karine:~/jaime_le_shell$ cp test6 le_shell_cest_trop_coolls
+kin@karine:~/jaime_le_shell$ ls -l
+total 4
+drwxr-xr-x 2 kin kin 4096 déc.  11 17:09 le_shell_cest_trop_coolls
+-rw-r--r-- 1 kin kin    0 déc.  11 17:04 test2
+-rw-r--r-- 1 kin kin    0 déc.  11 17:04 test3
+-rw-r--r-- 1 kin kin    0 déc.  11 17:04 test4
+-rw-r--r-- 1 kin kin    0 déc.  11 17:05 test6
+kin@karine:~/jaime_le_shell$ ls -a
+.  ..  le_shell_cest_trop_coolls  test2  test3  test4  test6
+kin@karine:~/jaime_le_shell$ cd le_shell_cest_trop_coolls
+kin@karine:~/jaime_le_shell/le_shell_cest_trop_coolls$ ls -a
+.  ..  test1  test2  test5  test6
+kin@karine:~/jaime_le_shell/le_shell_cest_trop_coolls$ ls -l
+total 0
+-rw-r--r-- 1 kin kin 0 déc.  11 17:04 test1
+-rw-r--r-- 1 kin kin 0 déc.  11 17:08 test2
+-rw-r--r-- 1 kin kin 0 déc.  11 17:05 test5
+-rw-r--r-- 1 kin kin 0 déc.  11 17:09 test6
+kin@karine:~/jaime_le_shell/le_shell_cest_trop_coolls$ 
+
